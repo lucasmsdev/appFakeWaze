@@ -21,6 +21,9 @@ const RouteScreen = ({ route }) => {
             addressdetails: 1,
             limit: 1,
           },
+          headers: {
+            'User-Agent': 'MeuAppDeRotas/1.0 (meuemail@exemplo.com)', // Substitua por algo seu
+          },
         });
 
         if (response.data.length === 0) {
